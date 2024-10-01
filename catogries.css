@@ -1,0 +1,59 @@
+.catogries{
+  display:flex;
+  height:50px;
+  align-items: center;
+  position:fixed;
+  background-color: white;
+  z-index: 300;
+  left: 72px;
+  right:0;
+  top:60px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #dedede;
+
+}
+
+@media all and (max-width:767px)
+{
+  .catogries{
+    left:0px;
+  }
+}
+.catogries>*{
+  background-color:rgb(240, 239, 239);
+  margin-left:10px;
+  margin-right:10px;
+  border-radius: 6px;
+  padding-top:6px;
+  padding-bottom: 6px;
+  padding-left:10px;
+  padding-right:10px;
+  font-family: Roboto, Arial;
+  font-size: 14px;
+  transition: background-color 0.2s;
+  width:max-content;
+}
+.catogries>*:hover{
+  background-color: lightgray;
+  cursor: pointer;
+}
+.all:hover{
+  background-color: black;
+}
+.all{
+  color:white;
+  background-color: black;
+}
+.catogries>button{
+  width:30px;
+  border-radius:15px;
+  border:none;
+  padding:10px;
+  background-color: white;
+}
+
+.fa-solidfa-chevron-right{
+  width:20px;
+  margin-right: 10px;
+}

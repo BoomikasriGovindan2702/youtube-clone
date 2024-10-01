@@ -1,0 +1,126 @@
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height:60px;
+  position:fixed;
+  background-color: #ffffff;
+  top:0;
+  right:0;
+  left:0;
+  z-index: 300;
+}
+
+.left-section{
+  display:flex;
+  align-items:center;
+}
+.hamberger{
+  height:24px;
+  margin-left:24px;
+  margin-right: 24px;
+  opacity:1;
+}
+.youtube-logo{
+  height:20px;
+}
+.right-section{
+  width:180px;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+.right-section>*{
+  height:24px;
+}
+.notify{
+  height:24px;
+}
+.user-logo{
+  height:32px;
+  border-radius: 16px;
+}
+.notification-cointainer{
+  position:relative;
+}
+
+.middle-section{
+  flex:1;
+  display:flex;
+  align-items:center;
+  margin-left:40px;
+  margin-right:35px;
+  max-width:650px;
+}
+.search-bar{
+  flex:1;
+  height:36px;
+  border-top-left-radius:20px;
+  border-bottom-left-radius: 20px;
+  border: 1px solid rgb(211, 210, 210);
+  padding-left:20px;
+  box-shadow:inset 1px 2px rgba(0,0,0,0.05);
+  font-family: Roboto, Arial;
+  font-size:15px;
+  z-index:200;
+}
+.search-bar:focus{
+  outline:none;
+  border-color:blue;
+}
+.middle-section.search-bar:focus{
+  border: 2px solid rgb(150, 150, 244);
+}
+.search-bar::placeholder{
+  font-size: 16px;
+  font-family:Roboto, Arial;
+  color:rgb(135, 134, 134);
+  user-select: none;
+}
+.search{
+  width:60px;
+  padding-left: 20px;
+}
+.search-button{
+ width:75px;
+ height:39px;
+ border:solid rgb(212, 210, 210);
+ margin-left: -14px;
+ border-width:1px;
+ background-color:rgb(247, 247, 247);
+ margin-right:10px; 
+ border-top-right-radius: 20px;
+ border-bottom-right-radius:20px;
+}
+
+.search{
+ width:25px;
+}
+.voice-search{
+  height:40px;
+  width:40px;
+  padding-top:4px;
+  border-radius:50%;
+  border:none;
+  background-color:rgb(245, 244, 244);
+  position: relative;
+}
+.voice-search:hover{
+  background-color: rgb(231, 231, 231);
+}
+.voice{
+  width:25px;
+  border-bottom:2px;
+}
+.right-section>button{
+  width:40px;
+  height:40px;
+  padding:8px;
+  border-radius:50%;
+  border:none;
+  background-color:rgb(245, 244, 244);
+}
+.right-section>button:hover{
+  background-color: rgb(231, 231, 231);
+}
